@@ -1,0 +1,247 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  height: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #abd22a;
+}
+
+::selection {
+  color: #fff;
+  background: #abd22a;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+  background: #fffeff;        /* color of the tracking area */
+  
+  }
+  
+  body::-webkit-scrollbar-thumb {
+  background-color: #d010e9;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid #b00fc5;  /* creates padding around scroll thumb */
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+  background-color: #dd27f5;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid #b00fc5;  /* creates padding around scroll thumb */
+  }
+
+/***************/
+
+/* font-family: 'Staatliches', cursive; */
+
+/***************/
+
+.container-back {
+  height: 100vh;
+  background-image: url(../images/back-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;  /* Aici este corectat */
+  background-size: cover;
+}
+
+.container-backdr {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.container-card-total {
+  height: auto;
+  width: 100%;
+}
+
+.container-card {
+  height: 100%;
+  max-width: 1550px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-card-elemente {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+}
+
+.container-card-el-1 {
+  height: 600px;
+  width: 400px;
+  background-color: #7000ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.container-card-el-2 {
+  height: 600px;
+  width: 400px;
+  background-image:linear-gradient(to bottom, #6f00ff00 0%, #7000ff 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.container-card-el-2:hover {
+  opacity: 1;
+}
+
+.container-card-el-1-img-div {
+  height: 400px;
+  width: 100%;
+  background-image:linear-gradient(to bottom, #6f00ff2c 0%, #7000ff 100%), url(../images/dreypraydev.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container-card-el-1-h2-asp {
+  font-family: 'Staatliches', cursive;
+  color: #fff;
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.container-card-el-1-p-asp {
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.container-card-el-1-hv-asp {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0px 0px 20px #fff;
+  animation: hover-effect 4s infinite; /* Aici se face ajustarea */
+  margin-top: 0px;
+}
+
+.hover-effect {
+  animation-name: hover-effect;
+  animation-duration: 4s; /* Modificare durată */
+  animation-iteration-count: infinite; /* Ajustare număr de iterații */
+  animation-fill-mode: forwards;
+}
+
+@keyframes hover-effect {
+  0% {
+    text-shadow: 0px 0px 20px #fff;
+  }
+  25% {
+    text-shadow: 0px 0px 20px #d010e9;
+  }
+  50% {
+    text-shadow: 0px 0px 20px #fff;
+  }
+  75% {
+    text-shadow: 0px 0px 20px #d010e9;
+  }
+  100% {
+    text-shadow: 0px 0px 20px #fff;
+  }
+}
+
+.container-card-el-2-fa-div {
+  height: auto;
+  width: 100%;
+/*   background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 36px;
+}
+
+.container-card-el-2-h2-asp {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.container-card-el-2-p-asp {
+  margin-top: -10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.container-card-el-2-fa-div-a-asp {
+  text-decoration: none;
+  color: #fff;
+  background-color: #d010e9;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100%;
+  outline: 2px solid #fff;
+  transition: 0.3s;
+}
+
+.container-card-el-2-fa-div-a-asp:hover {
+  background-color: #e058f1;
+  box-shadow: 0px 0px 20px #d010e9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************/
+
